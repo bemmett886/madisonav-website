@@ -1,7 +1,10 @@
     body {
         background-image: url('stars.gif');
-        background-size: 15%;
+        background-size: 200px;
     }
+
+@media (min-width: 700px) {
+
 
     .navbar {
         display: flex;
@@ -11,8 +14,10 @@
 
     }
 
-    .navbar .logo {
+    .navbar .logo img {
         margin: 2%;
+        min-width: 220px;
+        width: 35%;
     }
 
     .navbar .navlayers {
@@ -44,6 +49,7 @@
     .navbar .navlayers .navbuttons a:hover {
         color: lightblue;
         text-decoration: none;
+        font-style: italic;
     }
 
 
@@ -58,7 +64,71 @@
     }
 
 
+}
 
+
+@media (max-width: 700px) {
+
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 2%;
+
+    }
+
+    .navbar .logo img {
+        margin: 2%;
+        min-width: 220px;
+        width: 35%;
+    }
+
+    .navbar .navlayers {
+        display: flex;
+        flex-direction: column;
+        color:white;
+        font-family: 'comic-sans';
+        font-size: large;
+        align-content: right;
+
+    }
+
+    .navbar .navlayers .navbuttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar .navlayers .navbuttons a:link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar .navlayers .navbuttons a:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar .navlayers .navbuttons a:hover {
+        color: lightblue;
+        text-decoration: none;
+        font-style: italic;
+    }
+
+
+    .navbar .navlayers .navbuttons .individualbuttons {
+        display: inline-block;
+        white-space: nowrap;
+        margin: 0.5rem 1rem;
+        padding: 0.5rem 1rem;
+        background-color: rgb(65, 0, 139);
+        font-family: 'Comic Sans MS';
+        border-radius: 25%;
+    }
+
+
+}
 
 
 
