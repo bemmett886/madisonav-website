@@ -3,7 +3,7 @@ class NavBar extends HTMLElement {
         this.innerHTML = `
             <nav>
                 <div class="navbar">
-                    <a href="index.html" class="logo">
+                    <a href="/" class="logo">
                         <img src="logo.png">
                     </a>
                     <div class="navlayers">
