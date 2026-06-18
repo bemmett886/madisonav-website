@@ -3,18 +3,71 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>MadisonAV</title>
+    <link rel="icon" href="favicon-package/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-package/favicon-16x16.png">
+    <link rel="manifest" href="favicon-package/site.webmanifest">
 </head>
 
 <body>
     <script src="/navbar.js"></script>
     <nav-bar></nav-bar>
-
-    <div class="policytext">
-        <h1>Excuse the static</h1>
-        <p>Our web page is under construction. </p>
-        <p>Contact us directly at (605) 480-4053 or emmett@madisonav.net</p>
+    <div class="homepagetitle">
+        <h1><span id="rotating-word">Systems</span><br class="mobile-break"> you can trust.</h1>
     </div>
+    <br>
+    <br>
+    <div class="homepagething">
+        <div class="leftpart, homepagetextbox">
+            <h1>Live Event Production</h1>
+            <hr>
+            <p style="font-size: larger;">Weddings, Concerts, Festivals, and Fundraisers. MadisonAV has the gear and the knowhow to bring your event to life.</p>
+            <a class="defaultbutton" href="live.html">See More</a>
+        </div>
+        <div class="rightpart">
+            <img src="media/IMG_2155.JPG">
+            
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="homepagething">
+        <div class="leftpart">
+            <img src="media/IMG_6783.jpeg">
+        </div>
+        <div class="rightpart, homepagetextbox">
 
+            <h1>Permanent System Installation</h1>
+            <hr>
+            <p style="font-size: larger;">Your venue deserves better than a bluetooth speaker. From new construction to existing system updates and maintenance, count on MadisonAV to get your space looking and sounding its best.</p>
+            <a class="defaultbutton" href="live.html">See More</a>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+
+    <footer>
+        <p style="text-align: center;" class="policytext">&copy; 2026 Madison Audio Visual - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const words = ["Systems", "Audio", "Video", "Lighting", "People", "Production", "Planning", "Visuals", "Engineers"];
+        let index = 0;
+        const span = document.getElementById("rotating-word");
+
+        setInterval(() => {
+            span.classList.add("fade");
+            setTimeout(() => {
+                index = (index + 1) % words.length;
+                span.textContent = words[index];
+                span.classList.remove("fade");
+            }, 600);
+        }, 4000);
+    </script>
 </body>
 
 </html>
