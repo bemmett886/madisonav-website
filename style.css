@@ -57,7 +57,7 @@ body {
     background-color: rgb(65, 0, 139);
     font-family: 'Trebuchet MS';
     border-radius: 20px;
-    border: 2px solid rgb(139, 0, 144);
+    border: 3.5px outset rgb(139, 0, 144);
 }
 
 .navbuttons .spacer {
@@ -65,9 +65,14 @@ body {
 }
 
 .navbar .navlayers .navbuttons a:hover {
-    background-color: rgb(139, 0, 144);
+    background-color: rgb(117, 0, 121);
     transition-duration: 0.1s;
     box-shadow: 4px 4px 16px 0 rgba(136, 170, 255, 0.6);
+}
+
+.navbar .navlayers .navbuttons a:active {
+    border: 3.5px inset rgb(139, 0, 144);
+    background-color: rgb(78, 0, 81);
 }
 
 
@@ -84,6 +89,10 @@ body {
     padding: 1%;
     background-color: black;
     font-family: 'Trebuchet MS';
+}
+
+.policytext a {
+    color: rgb(234, 0, 234);
 }
 
 .pagetext {
@@ -170,14 +179,19 @@ hr {
     background-color: rgb(65, 0, 139);
     font-family: 'Trebuchet MS';
     border-radius: 20px;
-    border: 2px solid rgb(139, 0, 144);
+    border: 3.5px outset rgb(139, 0, 144);
     text-decoration: none;
 }
 
 .defaultbutton:hover {
-    background-color: rgb(139, 0, 144);
+    background-color: rgb(117, 0, 121);
     transition-duration: 0.1s;
     box-shadow: 4px 4px 16px 0 rgba(136, 170, 255, 0.6);
+}
+
+.defaultbutton:active {
+    border: 3.5px inset rgb(139, 0, 144);
+    background-color: rgb(78, 0, 81);
 }
 
 .homepagething {

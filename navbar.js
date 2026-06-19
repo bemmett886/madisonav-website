@@ -9,7 +9,7 @@ class NavBar extends HTMLElement {
                     <div class="navlayers">
                         <div class="navbuttons">
                             <a class="individualbuttons" href="live.html">Live Sound</a>
-                            <a class="individualbuttons" href="installed.html">Installed Sound</a>
+                            <a class="individualbuttons" href="installed.html">Installed Systems</a>
                             <span class="spacer"></span>
                             <a class="individualbuttons" href="about.html">About Us</a>
                             <a class="individualbuttons" href="contact.html">Contact</a>
