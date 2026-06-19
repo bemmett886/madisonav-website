@@ -258,6 +258,7 @@ hr {
 
     .navbar .logo img {
         width: 75%;
+        max-width: 50rem;
     }
 
     .spacer {
