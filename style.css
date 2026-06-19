@@ -11,6 +11,7 @@ body {
 
 
 
+
 /* ============================================================
    NAVBAR — shared across all breakpoints
    ============================================================ */
@@ -91,7 +92,7 @@ body {
     color: white;
     margin-left: 2%;
     margin-right: 2%;
-    padding: 1%;
+    /* padding: 1%; */
     font-family: 'Trebuchet MS';
 }
 
@@ -117,6 +118,19 @@ hr {
     /* border: 5px solid purple; */
 }
 
+.wholefooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    padding: .5rem;
+    
+}
+
+.wholefooter a {
+    color: purple;
+}
+
 
 
 /* ============================================================
@@ -126,9 +140,9 @@ hr {
 .homepagetitle {
     align-items: center;
     color: white;
-    margin-left: 2%;
+    /* margin-left: 2%;
     margin-right: 2%;
-    padding: 1%;
+    padding: 1%; */
     /* background-color: black; */
     font-family: 'Trebuchet MS';
     text-align: center;
@@ -139,7 +153,6 @@ hr {
 .homepagetitle h1 {
     display: inline-block;
     background-color: black;
-    padding: 2rem;
     font-size: 3rem;
 }
 
@@ -219,6 +232,17 @@ hr {
     display: none;
 }
 
+.wholefooter {
+    display: flex;
+    flex-direction: row;
+    padding-right: 2rem;
+}
+
+.wholefooter a {
+    /* padding: 0; */
+    margin: 0;
+}
+
 
 
 /* ============================================================
@@ -236,6 +260,10 @@ hr {
         width: 75%;
     }
 
+    .spacer {
+        flex: 1;
+    }
+
     .navbar .navlayers .navbuttons {
         flex-direction: row;
         justify-content: space-between;
@@ -246,6 +274,11 @@ hr {
         transition-duration: 0.1s;
         box-shadow: 4px 4px 16px 0 rgba(136, 170, 255, 0.6);
     } */
+
+    .homepagetitle h1 {
+        margin: 3rem;
+        /* padding: 0; */
+    }
 
     .homepagething {
         flex-direction: row;
@@ -295,6 +328,10 @@ hr {
         width: 55%;
     }
 
+    .spacer {
+        flex: 1;
+    }
+
     .navbar .navlayers .navbuttons {
         flex-direction: row;
         justify-content: space-between;
@@ -337,6 +374,10 @@ hr {
     .navbar .logo img {
         width: 90%;
         max-width: 420px;
+    }
+
+    .spacer {
+        flex: none;
     }
 
     .navbar .navlayers {
@@ -382,6 +423,11 @@ hr {
     .mobile-break {
         display: block;
         line-height: 0;
+    }
+
+    .wholefooter {
+        flex-direction: column-reverse;
+        text-align: center;
     }
 
 }
